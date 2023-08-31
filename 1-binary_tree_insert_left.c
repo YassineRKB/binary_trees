@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * binary_tree_insert_left - func to insert node at left-child of another node
+ * binary_tree_insert_left - func to insert node as left-child of another node
  * @parent: node where left child to be inserted
  * @value: value of new node
  * Return: pointer or null on error
