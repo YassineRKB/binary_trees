@@ -18,20 +18,20 @@ size_t binary_tree_size(const binary_tree_t *tree)
 
 /**
  * recursiveCheck - recursive function for binary_tree_is_complete
- * @root: tree
+ * @isroot: tree
  * @index: index of the node
  * @size: size of the tree
  * Return: 0 if not complete, else 1
  */
-int recursiveCheck(const binary_tree_t *isRoot, int size, int index)
+int recursiveCheck(const binary_tree_t *isroot, int size, int index)
 {
-	if (!isRoot)
+	if (!isroot)
 		return (1);
 	if (index >= size)
 		return (0);
 	return (
-		recursiveCheck(isRoot->left, size, 2 * index + 1) &&
-		recursiveCheck(isRoot->right, size, 2 * index + 2)
+		recursiveCheck(isroot->left, size, 2 * index + 1) &&
+		recursiveCheck(isroot->right, size, 2 * index + 2)
 	);
 }
 
