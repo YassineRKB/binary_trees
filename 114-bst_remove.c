@@ -30,7 +30,7 @@ bst_t *bst_remove(bst_t *root, int value)
 
 	drowNode = bst_search(root, value);
 	if (!drowNode)
-		return root;
+		return (root);
 	if (drowNode->left && drowNode->right)
 	{
 		sNode = drowNode->right;
@@ -56,5 +56,5 @@ bst_t *bst_remove(bst_t *root, int value)
 			drowNode->parent->left = NULL;
 	}
 	free(drowNode);
-	return root;
+	return (root);
 }
