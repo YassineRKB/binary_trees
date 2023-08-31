@@ -34,7 +34,7 @@ int recursiveCheck(const binary_tree_t *tree, size_t lvl, size_t depth)
 		return (0);
 	return (
 		recursiveCheck(tree->left, lvl + 1, depth) &&
-		recursiveCheck(tree->right, lvl +1, depth)
+		recursiveCheck(tree->right, lvl + 1, depth)
 	);
 }
 /**
