@@ -19,10 +19,10 @@ bst_t *bst_search(const bst_t *tree, int value)
 	return (NULL);
 }
 /**
- * bst_remove - function that removes a node from a BST
+ * bst_remove - func to remove a node from  BST
  * @root: root
  * @value: value
- * Return: node or 0
+ * Return: pointer to node or 0
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
